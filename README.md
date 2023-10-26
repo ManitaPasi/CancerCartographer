@@ -1,49 +1,21 @@
-# CancerCartographer
+# Breast_Cancer
 
-## 📌 Introduction
+The Breast Cancer (Wisconsin) Diagnosis dataset contains the diagnosis and a set of 30 features describing the characteristics of the cell nuclei present in the digitized image of a of a fine needle aspirate (FNA) of a breast mass. <br>
 
-This repository provides a simplified approach to classifying and visualizing breast cancer tumors as benign or malignant using the RandomForest classifier. The script `breast_cancer_classification_visualization.py` offers a concise implementation and visual insights on the dataset and results.
+Ten real-valued features are computed for each cell nucleus:
 
-## 📂 Dataset
+- radius (mean of distances from center to points on the perimeter);
+- texture (standard deviation of gray-scale values);
+- perimeter;
+- area;
+- smoothness (local variation in radius lengths);
+- compactness (perimeter^2 / area - 1.0);
+- concavity (severity of concave portions of the contour);
+- concave points (number of concave portions of the contour);
+- symmetry;
+- fractal dimension (“coastline approximation” - 1).<br>
 
-The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) Dataset. It's a built-in dataset within the `scikit-learn` library.
 
-## 🛠 Prerequisites
+The mean, standard error (SE) and “worst” or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. <br>
 
-Ensure you have the following packages installed:
-
-- `numpy`
-- `matplotlib`
-- `scikit-learn`
-- `seaborn`
-
-Install them using pip:
-
-```bash
-pip install numpy matplotlib scikit-learn seaborn
-```
-
-## 🔍 Usage
-
-To run the breast cancer classification and visualization:
-
-```bash
-python breast_cancer_classification_visualization.py
-```
-
-## 📈 Results
-
-After running the script, you'll be provided with the classification accuracy on the test dataset and a visualization offering insights on the distribution of benign and malignant tumors based on various features.
-
-## 🤝 Contributions
-
-If you find any bugs or would like to improve the project, please raise an issue or submit a pull request!
-
-## ⚖ License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## 👏 Acknowledgments
-
-- The creators of the [Breast Cancer Wisconsin (Diagnostic) Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)).
-- The `scikit-learn` community for their incredible tools and resources.
+We will analyze the features to understand the predictive value for diagnosis. We will then create models using two different algorithms and use the models to predict the diagnosis.
